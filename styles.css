@@ -1,0 +1,48 @@
+/* Base styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center; /* Adjusted for center alignment */
+}
+
+.intro-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .intro-container {
+        padding: 0 10px;
+    }
+    
+    .intro-container h1 {
+        font-size: 28px;
+    }
+    
+    .intro-container p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-container h1 {
+        font-size: 24px;
+    }
+    
+    .intro-container p {
+        font-size: 12px;
+    }
+}
