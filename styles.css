@@ -1,101 +1,24 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0; /* Adjusted for better visibility */
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Intro Container */
-.intro-container {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.intro-container h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.intro-container p {
-    font-size: 1em;
-    margin-bottom: 30px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: white;
-    background-color: #007bff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-/* Image Row */
-.image-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.image-row img {
-    width: 100%;
-    max-width: 200px; /* Adjust as needed */
-    height: auto;
-    object-fit: cover;
-}
-
 /* Footer */
 footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 20px 0; /* Adjusted for better visibility */
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Responsive Design */
-
-/* Screens up to 980px */
-@media (max-width: 980px) {
-    header, footer {
-        padding: 15px 0; /* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        padding: 8px 0; /* Slightly reduce padding on tablets and smaller screens */
     }
 }
 
-/* Screens up to 767px */
-@media (max-w
+@media (max-width: 480px) {
+    footer {
+        padding: 6px 0; /* Further reduce padding on mobile devices */
+        font-size: 0.9em; /* Reduce font size for better fit */
+    }
+}
