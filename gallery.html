@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>Countdown City Sports</title>
+    <!-- TemplateEndEditable -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /* Header and logo */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-right: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Main content */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .main-content h1 {
+            font-size: 36px;
+            color: #444;
+        }
+        .main-content p {
+            font-size: 18px;
+            max-width: 600px;
+            line-height: 1.6;
+            color: #666;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #5e4534;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+        .buttons a:hover {
+            background-color: #6e563c;
+        }
+    </style>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    <header class="header">
+        <img src="s1.png" alt="Countdown City Shooters Logo" class="logo">
+        <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+    </header>
+	</body>
+	</html>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact of Countdown City Sports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .intro-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: middle;
+        }
+        .intro-container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .intro-container p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        /* Additional styles can go here */
+    </style>
+</head>
+<body>
+
+    <div class="intro-container">
+        <h1>See the Impact of Countdown City Sports</h1>
+        <p>Explore our gallery to witness the transformative power of sports in our community. From action-packed games to moments of teamwork and growth, these images capture the spirit and mission of Countdown City Sports.</p>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .slideshow-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        /* Dots (indicator for slideshow) */
+        .dot-container {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        /* Fade animation for slides */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        /* Responsive layout */
+        @media only screen and (max-width: 768px) {
+            .prev, .next {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption -->
+    <div class="slides fade">
+        <img src="11.jpg" alt="Image 1">
+    </div>
+
+    <div class="slides fade">
+        <img src="111.jpg" alt="Image 2">
+    </div>
+
+    <div class="slides fade">
+        <img src="99.jpg" alt="Image 3">
+    </div>
+
+    <div class="slides fade">
+        <img src="10.jpg" alt="Image 4">
+    </div>
+
+    <div class="slides fade">
+        <img src="88.jpg" alt="Image 5">
+    </div>
+
+    <div class="slides fade">
+        <img src="77.jpg" alt="Image 6">
+    </div>
+
+    <div class="slides fade">
+        <img src="66.jpg" alt="Image 7">
+    </div>
+
+    <div class="slides fade">
+        <img src="55.jpg" alt="Image 8">
+    </div>
+
+    <div class="slides fade">
+        <img src="44.jpg" alt="Image 9">
+    </div>
+
+    <div class="slides fade">
+        <img src="33.jpg" alt="Image 10">
+    </div>
+
+    <div class="slides fade">
+        <img src="22.jpg" alt="Image 11">
+    </div>
+
+    <div class="slides fade">
+        <img src="team.jpg" alt="Image 12">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<!-- Dots for navigation -->
+<div class="dot-container">
+    <span class="dot" onclick="currentSlide(1) "></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+    <span class="dot" onclick="currentSlide(8)"></span> 
+    <span class="dot" onclick="currentSlide(9)"></span> 
+    <span class="dot" onclick="currentSlide(10)"></span> 
+    <span class="dot" onclick="currentSlide(11)"></span> 
+    <span class="dot" onclick="currentSlide(12)"></span> 
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+</html>
+
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Custom Angled Divider */
+        .footer-divider {
+            position: relative;
+            height: 50px;
+            background-color: #fff;
+        }
+        .footer-divider:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #3E3426;
+            clip-path: polygon(0 100%, 100% 0, 100% 50%, 0% 100%);
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #fff;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+        
+        .footer h2 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .footer .footer-column {
+            width: 30%;
+        }
+
+        .footer .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer .footer-column p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Footer Divider -->
+    <div class="footer-divider"></div>
+
+    <!-- Footer Content -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h2>Countdown City Sports</h2>
+        </div>
+        <div class="footer-column">
+            <h3>Location</h3>
+            <p>10434 Lion Hunt</p>
+            <p>San Antonio, TX 78251</p>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>countdowncitysports210@gmail.com</p>
+            <p>(210) 850-3033</p>
+        </div>
+    </footer>
+
+</body>
+</html>
