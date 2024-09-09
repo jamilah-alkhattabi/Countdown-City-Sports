@@ -3,6 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+header, footer {
+    background-color: #f4f4f4; /* Light gray background for header and footer */
+    padding: 20px;
+    text-align: center;
+    position: relative;
 }
 
 .container {
@@ -16,12 +24,28 @@ img {
     height: auto;
 }
 
+/* Header and Footer Styles */
+header {
+    position: fixed; /* Make header stick to the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header stays above other content */
+}
+
+footer {
+    position: fixed; /* Make footer stick to the bottom */
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
 /* Intro Container Styles */
 .intro-container {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 70px auto 50px auto; /* Adjust top margin for fixed header */
     padding: 0 20px;
-    text-align: center; /* Changed from 'middle' to 'center' */
+    text-align: center;
 }
 
 .intro-container h1 {
@@ -37,14 +61,15 @@ img {
 /* Image Row Styles */
 .image-row {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Ensure images wrap to the next line on smaller screens */
+    flex-wrap: wrap; /* Ensure images wrap on smaller screens */
+    gap: 10px; /* Add space between images */
+    justify-content: center; /* Center images horizontally */
 }
 
 .image-row img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 200px; /* Set a maximum width for larger screens */
+    width: 100%;
+    height: auto;
+    max-width: 200px;
 }
 
 /* Media Queries for Tablets and Smaller Devices */
@@ -62,7 +87,7 @@ img {
     }
 
     .image-row img {
-        max-width: 150px; /* Adjust size of images for tablets */
+        max-width: 150px;
     }
 }
 
@@ -81,6 +106,6 @@ img {
     }
 
     .image-row img {
-        max-width: 100px; /* Adjust size of images for mobile devices */
+        max-width: 100px;
     }
 }
