@@ -6,45 +6,37 @@ body {
     box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
 }
 
-header, footer {
-    background-color: #f4f4f4; /* Light gray background for header and footer */
-    padding: 20px;
-    text-align: center;
-    position: relative;
-}
-
+/* Container to Center Content and Limit Width */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+/* Header and Footer Styles */
+header, footer {
+    background-color: #f4f4f4; /* Light gray background for header and footer */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
 }
 
-/* Header and Footer Styles */
 header {
-    position: fixed; /* Make header stick to the top */
-    width: 100%;
+    position: fixed; /* Keep header at the top */
     top: 0;
     left: 0;
     z-index: 1000; /* Ensure header stays above other content */
 }
 
 footer {
-    position: fixed; /* Make footer stick to the bottom */
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    position: relative; /* Footer will be positioned relative to its content */
+    margin-top: 20px; /* Space between main content and footer */
+    border-top: 1px solid #ddd; /* Divider line */
 }
 
-/* Intro Container Styles */
+/* Content Layout */
 .intro-container {
-    max-width: 800px;
-    margin: 70px auto 50px auto; /* Adjust top margin for fixed header */
-    padding: 0 20px;
+    margin: 100px auto 50px auto; /* Adjust top margin to avoid overlap with fixed header */
     text-align: center;
 }
 
@@ -69,15 +61,11 @@ footer {
 .image-row img {
     width: 100%;
     height: auto;
-    max-width: 200px;
+    max-width: 200px; /* Limit max width of images */
 }
 
 /* Media Queries for Tablets and Smaller Devices */
 @media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-
     .intro-container h1 {
         font-size: 30px;
     }
@@ -93,10 +81,6 @@ footer {
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 480px) {
-    .container {
-        padding: 10px;
-    }
-
     .intro-container h1 {
         font-size: 24px;
     }
