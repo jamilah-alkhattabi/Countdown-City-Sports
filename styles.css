@@ -99,6 +99,10 @@ footer {
     .image-row img {
         max-width: 100%;
     }
+
+    header, footer {
+        padding: 8px 0; /* Slightly reduce padding on tablets and smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -122,6 +126,11 @@ footer {
     .button {
         padding: 8px 16px;
     }
+
+    header, footer {
+        padding: 6px 0; /* Further reduce padding on mobile devices */
+        font-size: 0.9em; /* Reduce font size for better fit */
+    }
 }
 
 @media (max-width: 430px) {
@@ -139,33 +148,5 @@ footer {
 
     .image-row img {
         max-width: 150px; /* Adjust for smaller screens */
-    }
-}
-/* General Styles */
-header {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header, footer {
-        padding: 8px 0; /* Slightly reduce padding on tablets and smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    header, footer {
-        padding: 6px 0; /* Further reduce padding on mobile devices */
-        font-size: 0.9em; /* Reduce font size for better fit */
     }
 }
