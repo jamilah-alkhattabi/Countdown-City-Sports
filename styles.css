@@ -1,93 +1,99 @@
-/* Base Styles */
+/* Basic styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
 }
 
-/* Container to Center Content and Limit Width */
 .container {
-    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header and Footer Styles */
 header, footer {
-    background-color: #f4f4f4; /* Light gray background for header and footer */
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-header {
-    position: fixed; /* Keep header at the top */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure header stays above other content */
-}
-
-footer {
-    position: relative; /* Footer will be positioned relative to its content */
-    margin-top: 20px; /* Space between main content and footer */
-    border-top: 1px solid #ddd; /* Divider line */
-}
-
-/* Content Layout */
-.intro-container {
-    margin: 100px auto 50px auto; /* Adjust top margin to avoid overlap with fixed header */
+    background-color: #f8f8f8;
+    padding: 10px;
     text-align: center;
 }
 
-.intro-container h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.intro-container p {
-    font-size: 16px;
-    margin-bottom: 30px;
+nav ul li {
+    display: inline;
+    margin-right: 10px;
 }
 
-/* Image Row Styles */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
 .image-row {
     display: flex;
-    flex-wrap: wrap; /* Ensure images wrap on smaller screens */
-    gap: 10px; /* Add space between images */
-    justify-content: center; /* Center images horizontally */
+    flex-wrap: wrap;
 }
 
 .image-row img {
     width: 100%;
+    max-width: 200px; /* Adjust as needed */
     height: auto;
-    max-width: 200px; /* Limit max width of images */
+    margin: 5px;
 }
 
-/* Media Queries for Tablets and Smaller Devices */
-@media (max-width: 768px) {
-    .intro-container h1 {
-        font-size: 30px;
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+/* Mobile styles */
+@media (max-width: 767px) {
+    nav ul {
+        text-align: center;
     }
 
-    .intro-container p {
-        font-size: 14px;
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: center;
     }
 
     .image-row img {
-        max-width: 150px;
+        max-width: 100%;
     }
 }
 
-/* Media Queries for Mobile Devices */
-@media (max-width: 480px) {
-    .intro-container h1 {
-        font-size: 24px;
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
     }
 
-    .intro-container p {
-        font-size: 12px;
+    .image-row {
+        flex-direction: row;
     }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .container {
+        width: 70%;
+    }
+}
 
     .image-row img {
         max-width: 100px;
